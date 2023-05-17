@@ -41,10 +41,23 @@ const toggle = ()=>{
                     border: none;
                     color: inherit;
                     cursor: pointer;
+                    h5{
+                        display: flex;
+                        align-items: center;
+                            
+                    }
                 }
             }
             
         }
+    }
+}
+@media (max-width:776px) {
+    h3{
+        font-size: 21px ;
+    }    
+    h5{
+        font-size: 18px;
     }
 }
 </style>

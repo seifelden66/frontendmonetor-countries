@@ -94,7 +94,7 @@ function getBorderCountryName(alpha3Code: string) {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1em;
-    height: 100vh;
+    min-height: 100vh;
     .le {
       height: 50vh;
     }
@@ -121,12 +121,13 @@ function getBorderCountryName(alpha3Code: string) {
       .borders {
         margin-top: 30px;
         .riii {
-            display: flex;
-            flex-wrap: wrap;
+          display: flex;
+          flex-wrap: wrap;
           .rii {
             margin-left: 10px;
             margin-bottom: 10px;
             width: 130px;
+
             display: flex;
             align-items: center;
             border-radius: 6px;
@@ -139,14 +140,20 @@ function getBorderCountryName(alpha3Code: string) {
   }
 }
 @media (max-width: 768px) {
-  .container{
-    main{
+  .container {
+    main {
       display: grid;
       grid-template-columns: 1fr;
-      .ri{
-        .info{
+      .ri {
+        .info {
           display: grid;
-        grid-template-columns: 1fr;
+          grid-template-columns: 1fr;
+        }
+        .borders{
+          .item{
+            display: grid;
+            
+          }
         }
       }
     }
